@@ -14,7 +14,7 @@ graphic1 = dcc.Graph(
             'layout': {
                 'title': 'Dash Data Visualization Grafica 1'
             }
-        }
+        }, className="test"
     )
 
 # grafica 2

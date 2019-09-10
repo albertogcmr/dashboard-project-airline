@@ -31,3 +31,7 @@ You will find the following instructions:
 ```
 source ~/.venvs/venv_dash/bin/activate
 ```
+
+## additional data from IATA database
+
+https://www.partow.net/miscellaneous/airportdatabase/

@@ -11,6 +11,10 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 
 app.layout = html.Div(children=[
+    html.Link(
+        href=app.get_asset_url('style.css'),
+        rel='stylesheet'
+    ), 
     html.H1(children='Hello Dash'),
 
     html.Div(children='''
@@ -19,9 +23,12 @@ app.layout = html.Div(children=[
     html.Div([
         graphic1, 
         graphic2, 
+    ], className='graph-row')
+    , 
+    html.Div([ 
         graphic3, 
         graphic4, 
-    ])
+    ], className='graph-row')
 
      
 ])
