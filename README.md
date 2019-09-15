@@ -1,5 +1,5 @@
 # dashboard-project-airline
-Prueba tecnica para trabajo en aerolinea, exigen que no se use tableau ni similares. lo haré con plotly y dash
+Prueba técnica para trabajo en aerolinea, exigen que no se use tableau ni similares. Se hará con **plotly** y **dash**. 
 
 ## instructions
 
@@ -27,11 +27,50 @@ You will find the following instructions:
 * LOF_ID - line of flight identifier, line of flight is a daily route of an aircraft
 
 
-## venv
+
+## requirements
+
+Para ejecutar el proyecto hay que instalar las dependencias que se encuentran en el fichero `requirements.txt`. Por ejemplo con pip: 
+
 ```
-source ~/.venvs/venv_dash/bin/activate
+$ pip3 install -r requirements.txt
 ```
+
 
 ## additional data from IATA database
 
+Para enriquecer el dataset con las longitudes y latitudes de los aeropuertos se consume el siguiente recurso. Más adelante se podrían emplear para visualizaciones geográficas con `folium` en mejorar futuras. 
+
 https://www.partow.net/miscellaneous/airportdatabase/
+
+## Files
+ 
+* app.py: despliega el dashboard
+* assets/style.css: hoja de estilo
+* graphics.py: contiene 4 ejemplos de plots interactivos que se podrían incluir en un dashboard real
+* requirements.txt: contiene las dependencias de python para este proyecto que se pueden instalar en un entorno virtual. 
+* pipe.py: creación del dataframe con los datos
+* input: contiene los datasets empleados. 
+* test.ipynb: contine los test de enriquecimiento y consumo de datasets
+
+## Start app
+
+Para iniciar la visualización ejecutar el siguiente comando, previamente instaladas las dependencias. 
+
+```
+$ python3 app.py
+```
+
+La consola nos mostrará una URL local a la que acceder para abrir la visualización en el navegador
+
+```
+Running on http://127.0.0.1:8050/
+```
+
+## Next Steps
+
+1. Incluir `callbacks` para mejorar la interactividad
+2. Uso de visualización geoespacial para hacer uso de la base de datos importada o una API. 
+3. Incluir branding de la empresa. 
+
+

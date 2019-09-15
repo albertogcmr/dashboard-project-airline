@@ -1,8 +1,15 @@
-div {
-    background-color: brown;
+.higher {
+    background-color: white;
 }
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 .graph-row {
     display: flex; 
-
+    justify-content: space-around;
 }
